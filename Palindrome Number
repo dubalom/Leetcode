@@ -1,0 +1,17 @@
+//Palindrome Number
+class Solution {
+    public boolean isPalindrome(int x) {
+        String s=String.valueOf(x);
+    
+        String output = "";
+        boolean ans = false;
+
+        for (int i = s.length() - 1; i >= 0; i--) {
+            output = output + s.charAt(i);
+        }
+        if (s.equals(output)){
+            ans = true;
+            }
+        return ans;
+        }
+}
